@@ -1,5 +1,9 @@
 binary = input("Please enter a binary number: ")
-integer,fraction = binary.split(".")
+if "." in binary:
+    integer,fraction = binary.split(".")
+else:
+    integer = binary
+    fraction = []
 decimal = 0
 p_power = 0
 #For the integer part of the binary number 
